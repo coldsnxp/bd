@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blue Diamond Links</title>
+<style>
+    body {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        background-color: #0a1a3a;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        color: white;
+    }
+
+    .container {
+        text-align: center;
+        background-color: #0f2a5c;
+        padding: 50px 40px;
+        border-radius: 25px;
+        box-shadow: 0 12px 40px rgba(0,0,0,0.6);
+        max-width: 450px;
+        width: 90%;
+    }
+
+    .diamond {
+        font-size: 4rem;
+        margin-bottom: 15px;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+        margin-bottom: 30px;
+        color: #aad8ff;
+    }
+
+    .link-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .link-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out; /* wrapper expands smoothly */
+}
+
+    .link-button {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        justify-content: center;
+        text-decoration: none;
+        color: white;
+        background-color: #1e3c72;
+        padding: 18px;
+        border-radius: 15px;
+        font-size: 1.4rem;
+        font-weight: 600;
+        transition: transform 0.2s, background-color 0.2s;
+        width: 100%;
+    }
+
+    .link-button img {
+        height: 32px;
+        width: 32px;
+    }
+
+    .link-button:hover {
+    transform: translateY(-2px);
+    background-color: #2a5298;
+}
+
+    .description {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    background-color: #12244c;
+    margin-top: 5px;
+    border-radius: 10px;
+    padding: 0 12px;
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+    color: #aad8ff;
+    transition: max-height 0.35s ease-in-out, opacity 0.25s ease-in-out, padding 0.35s ease-in-out;
+    width: 100%;
+}
+    .link-wrapper:hover .description {
+    max-height: 80px; /* enough room for text */
+    opacity: 1;
+    padding: 8px 12px;
+}
+
+
+    footer {
+        margin-top: 25px;
+        font-size: 0.9rem;
+        color: #88c0ff;
+    }
+
+    @media (max-width: 500px) {
+        h1 {
+            font-size: 1.8rem;
+        }
+        .link-button {
+            font-size: 1.2rem;
+            padding: 15px;
+        }
+        .link-button img {
+            height: 28px;
+            width: 28px;
+        }
+        .description {
+            font-size: 0.8rem;
+        }
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="diamond">💎</div>
+    <h1>Blue Diamond</h1>
+    <div class="link-buttons">
+
+        <div class="link-wrapper">
+            <a class="link-button" href="https://discord.com" target="_blank">
+                <img src="https://img.icons8.com/?size=256&id=M725CLW4L7wE&format=png" alt="Discord Logo"> Discord
+            </a>
+            <div class="description">Join our Discord server to chat with the community!</div>
+        </div>
+
+        <div class="link-wrapper">
+            <a class="link-button" href="https://www.eldorado.gg/" target="_blank">
+                <img src="https://consumersiteimages.trustpilot.net/business-units/5cebce4700fdb200013aa823-198x149-1x.avif" alt="Eldorado Logo"> Eldorado
+            </a>
+            <div class="description">Check Eldorado for great trading and deals.</div>
+        </div>
+
+        <div class="link-wrapper">
+            <a class="link-button" href="https://www.ebay.com/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/EBay_logo.svg" alt="eBay Logo"> eBay
+            </a>
+            <div class="description">Buy and sell items securely on eBay.</div>
+        </div>
+
+        <div class="link-wrapper">
+            <a class="link-button" href="https://sellauth.com" target="_blank">
+                <img src="https://sellauth.com/favicon.ico" alt="SellAuth Logo"> SellAuth
+            </a>
+            <div class="description">Access SellAuth to manage your sales safely.</div>
+        </div>
+
+    </div>
+    <footer>© 2025 Blue Diamond</footer>
+</div>
+</body>
+</html>
