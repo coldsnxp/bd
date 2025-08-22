@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blue Diamond Links</title>
+<style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: white;
+    background: url('background.gif') no-repeat center center;
+    background-size: cover;
+}
+
+.card {
+    position: relative;
+    width: 90%;
+    max-width: 450px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.45);
+    overflow: hidden;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Banner */
+.banner {
+    width: 100%;
+    height: 140px;
+    background: url('https://cdn.discordapp.com/banners/585260750088568848/a_c8d037dab2fa145171085fc6b2b02ab1.webp?size=300&animated=true') no-repeat center/cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    position: relative;
+}
+
+/* Profile picture */
+.avatar {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 2px solid rgba(255,255,255,0.3);
+    background: url('https://cdn.discordapp.com/avatars/585260750088568848/5f740537ff45a0763cb1a3459a886466.webp?size=80') no-repeat center/cover;
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.content {
+    padding: 80px 25px 25px 25px;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 2rem;
+    color: #aad8ff;
+}
+
+.social-links {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.social-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    transition: all 0.4s ease;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    padding: 12px;
+    border-radius: 9999px;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.social-links a:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Glass bubble description */
+.description {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 9999px;
+    padding: 0 12px;
+    font-size: 0.9rem;
+    color: #aad8ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.social-wrapper:hover .description {
+    max-height: 60px; /* adjust based on text length */
+    padding: 12px;
+    opacity: 1;
+}
+
+/* Platform colors */
+.Discord { background: #5865F2; }
+.Discord:hover { background: #4853E5; }
+
+.Eldorado { background: #C13584; }
+.Eldorado:hover { background: #B9337C; }
+
+.eBay { background: #1DA1F2; }
+.eBay:hover { background: #1A91E6; }
+
+.SellAuth { background: #FF0000; }
+.SellAuth:hover { background: #CC0000; }
+
+.social-links img {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 0.85rem;
+    color: #aad8ff;
+}
+</style>
+</head>
+<body>
+
+<div class="card">
+    <div class="banner"></div>
+    <div class="avatar"></div>
+
+    <div class="content">
+        <h1>Blue Diamond</h1>
+
+        <div class="social-links">
+            <div class="social-wrapper">
+                <a href="https://discord.com" target="_blank" class="Discord">
+                    <img src="https://img.icons8.com/?size=256&id=M725CLW4L7wE&format=png" alt="Discord"> Discord
+                </a>
+                <div class="description">Join our Discord server to chat with the community!</div>
+            </div>
+
+            <div class="social-wrapper">
+                <a href="https://www.eldorado.gg/" target="_blank" class="Eldorado">
+                    <img src="https://consumersiteimages.trustpilot.net/business-units/5cebce4700fdb200013aa823-198x149-1x.avif" alt="Eldorado"> Eldorado
+                </a>
+                <div class="description">Check Eldorado for great trading and deals.</div>
+            </div>
+
+            <div class="social-wrapper">
+                <a href="https://www.ebay.com/" target="_blank" class="eBay">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/EBay_logo.svg" alt="eBay"> eBay
+                </a>
+                <div class="description">Buy Jailbreak securly from our ebay store.</div>
+            </div>
+
+            <div class="social-wrapper">
+                <a href="https://sellauth.com" target="_blank" class="SellAuth">
+                    <img src="https://sellauth.com/favicon.ico" alt="SellAuth"> SellAuth
+                </a>
+                <div class="description">Get the best prices on our sell auth.</div>
+            </div>
+        </div>
+
+        <footer>© 2025 Blue Diamond</footer>
+    </div>
+</div>
+
+</body>
+</html>
